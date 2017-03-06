@@ -1,154 +1,537 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
 <head>
-	<meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-	
 
-	<title>Blog</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-	
-	
-	<link rel="stylesheet" href="/css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="/css/basscss.css" type="text/css">
-	<link rel="stylesheet" href="/css/basscss-ui-groups.css" type="text/css">
-	<link rel="stylesheet" href="/css/tomorrow.css" type="text/css">
-	<link rel="stylesheet" href="/css/style.css" type="text/css">
-	
-		<link href="https://dist.s3.fmt01.sdapi.net/fonts/lato-v11/lato-v11-all.css" rel="stylesheet" type="text/css">
-	
-	
 
-	<!--[if lt IE 9]><script src="/js/html5.js" type="text/javascript"></script><![endif]-->
-	<script src="/js/main.js" type="text/javascript"></script>
-</head>
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-<body>
-	<section class="container m4 clearfix">
-		<div class="clearfix">
-			<div class="mb4 sm-flex center nowrap">
-	<div class="flex-auto block">
-		<p class="inline h2">Blog</p> | <small class="muted">wwwwylin</small>
-	</div>
-</div>
 
-			<div class="mn1 center">
-	
-		<a href="/./" class="btn button-narrow">Home</a>
-	
-		<a href="/archives/" class="btn button-narrow">Archives</a>
-	
-	<a href="/search.html" class="btn button-narrow" onclick="loadJQuery(this, event);" data-modal>
-		<svg class="icon" data-icon="search"></svg>
-	</a>
-</div>
 
-			<div class="p0 col col-12">
-				
-<div class="mt2 mb2">
-	<span class="btn button-narrow">Archives</span>
-	<svg class="icon gray" data-icon="chevron-right"></svg>
-	<span class="btn button-narrow">7 posts</span>
-</div>
-<div class="mt2 mb2">
-	
-		<div class="col-12 bg-white rounded mb4">
-			<span class="btn block border-bottom muted">2016 <span class="h6 muted">(5)</span></span>
-			
-			<a href="/2016/11/22/product_study_summary/" class="btn block border-bottom">产品小白学习概要
-				<span class="h6 muted black">
-					Nov 22 2016
-				</span>
-			</a>
-			
-			<a href="/2016/07/30/taking-about-teamwork/" class="btn block border-bottom">要怎么带动一个团队
-				<span class="h6 muted black">
-					Jul 30 2016
-				</span>
-			</a>
-			
-			<a href="/2016/10/31/taking_about_hack/" class="btn block border-bottom">武汉黑客马拉松感。
-				<span class="h6 muted black">
-					Oct 31 2016
-				</span>
-			</a>
-			
-			<a href="/2016/05/20/taking_about_usability testing/" class="btn block border-bottom">4步拿下可用性测试
-				<span class="h6 muted black">
-					May 20 2016
-				</span>
-			</a>
-			
-			<a href="/2016/12/31/taking_about_emoji/" class="btn block">谈谈表情包产品吧
-				<span class="h6 muted black">
-					Dec 31 2016
-				</span>
-			</a>
-			
-		</div>
-	
-		<div class="col-12 bg-white rounded mb4">
-			<span class="btn block border-bottom muted">2017 <span class="h6 muted">(2)</span></span>
-			
-			<a href="/2017/02/22/summary_on_ccnubox_development/" class="btn block border-bottom">华师匣子项目总结
-				<span class="h6 muted black">
-					Feb 22 2017
-				</span>
-			</a>
-			
-			<a href="/2017/01/02/taking-about-five/" class="btn block">总把初心挂在嘴边的我
-				<span class="h6 muted black">
-					Jan 2 2017
-				</span>
-			</a>
-			
-		</div>
-	
-</div>
 
-			</div>
-		</div>
-	</section>
-	<div class="container mb2 clearfix">
-	<div class="sm-flex center nowrap mb2 h5">
-		<div class="flex-auto border-bottom">
-			<a href="https://hexo.io/" class="btn block muted">Hexo</a>
-		</div>
-		<div class="flex-auto border-bottom">
-			<a href="https://zllovesuki.git.sx/essays/2016/02/hexo-theme-weightless/" class="btn block">Weightless</a> Theme
-		</div>
-		<div class="flex-auto border-bottom">
-			Rocking <a href="http://www.basscss.com/" class="btn block">Basscss</a>
-		</div>
-		<div class="flex-auto border-bottom">
-			
-		</div>
-	</div>
-</div>
-<script src="/js/geomicons.js"></script>
-<script type="text/javascript">
-	var icons = document.querySelectorAll('[data-icon]');
-	geomicons.inject(icons);
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="写有意思的文/做有意思的产品/(*≧∪≦)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog">
+<meta property="og:url" content="http://yoursite.com/archives/2016/05/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="写有意思的文/做有意思的产品/(*≧∪≦)">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blog">
+<meta name="twitter:description" content="写有意思的文/做有意思的产品/(*≧∪≦)">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
 </script>
 
 
-	<!-- Piwik -->
-	<script type="text/javascript">
-	  var _paq = _paq || [];
-	  _paq.push(['trackPageView']);
-	  _paq.push(['enableLinkTracking']);
-	  (function() {
-	    var u="//null/";
-	    _paq.push(['setTrackerUrl', u+'piwik.php']);
-	    _paq.push(['setSiteId', null]);
-	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	  })();
-	</script>
-	<noscript><p><img src="//null/piwik.php?idsite=null" style="border:0;" alt="" /></p></noscript>
-	<!-- End Piwik Code -->
+
+  <link rel="canonical" href="http://yoursite.com/archives/2016/05/"/>
 
 
+
+
+
+  <title> Archiv | Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">wwwwylin</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      Öhm..! Insgesamt 7 Artikel. Bleib dran.
+    </span>
+
+    
+
+      
+      
+      
+
+      
+        
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+        </div>
+      
+      
+
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/05/20/taking_about_usability testing/" itemprop="url">
+              
+                <span itemprop="name">4步拿下可用性测试</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-05-20T22:33:50+08:00"
+              content="2016-05-20" >
+          05-20
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+    
+
+  </section>
+
+  
+
+
+          
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="wwwwylin" />
+          <p class="site-author-name" itemprop="name">wwwwylin</p>
+           
+              <p class="site-description motion-element" itemprop="description">写有意思的文/做有意思的产品/(*≧∪≦)</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wwwwylin</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
 
 </body>
 </html>

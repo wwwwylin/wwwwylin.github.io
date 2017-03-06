@@ -1,66 +1,332 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
 <head>
-	<meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-	
 
-	<title>产品小白学习概要 | Blog</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-	
-	
-	<link rel="stylesheet" href="/css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="/css/basscss.css" type="text/css">
-	<link rel="stylesheet" href="/css/basscss-ui-groups.css" type="text/css">
-	<link rel="stylesheet" href="/css/tomorrow.css" type="text/css">
-	<link rel="stylesheet" href="/css/style.css" type="text/css">
-	
-		<link href="https://dist.s3.fmt01.sdapi.net/fonts/lato-v11/lato-v11-all.css" rel="stylesheet" type="text/css">
-	
-	
 
-	<!--[if lt IE 9]><script src="/js/html5.js" type="text/javascript"></script><![endif]-->
-	<script src="/js/main.js" type="text/javascript"></script>
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="如果你是产品小白，如果你不知道当产品经理需要进行哪方面的学习，那么这篇文章希望能对你有所帮助！如文中有不足或不当之处期待你能友好指出ʘᴗʘ，若能进一步的交流或解惑那就更好了。
+前言：产品经理的工作贯穿了整个产品开发工作，从想法雏形的出现到产品的上线后维护及到最后的交接。此文将以产品经理所要进行的工作来展开产经的学习内容有哪些（学习概要汇总），细致的学习内容及心得体会这里就不扩展了。但是如果想要真">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品小白学习概要">
+<meta property="og:url" content="http://yoursite.com/2016/11/22/product_study_summary/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="如果你是产品小白，如果你不知道当产品经理需要进行哪方面的学习，那么这篇文章希望能对你有所帮助！如文中有不足或不当之处期待你能友好指出ʘᴗʘ，若能进一步的交流或解惑那就更好了。
+前言：产品经理的工作贯穿了整个产品开发工作，从想法雏形的出现到产品的上线后维护及到最后的交接。此文将以产品经理所要进行的工作来展开产经的学习内容有哪些（学习概要汇总），细致的学习内容及心得体会这里就不扩展了。但是如果想要真">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1463304-4da73dd178709e79?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-01-02T07:58:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="产品小白学习概要">
+<meta name="twitter:description" content="如果你是产品小白，如果你不知道当产品经理需要进行哪方面的学习，那么这篇文章希望能对你有所帮助！如文中有不足或不当之处期待你能友好指出ʘᴗʘ，若能进一步的交流或解惑那就更好了。
+前言：产品经理的工作贯穿了整个产品开发工作，从想法雏形的出现到产品的上线后维护及到最后的交接。此文将以产品经理所要进行的工作来展开产经的学习内容有哪些（学习概要汇总），细致的学习内容及心得体会这里就不扩展了。但是如果想要真">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1463304-4da73dd178709e79?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/22/product_study_summary/"/>
+
+
+
+
+
+  <title> 产品小白学习概要 | Blog </title>
 </head>
 
-<body>
-	<section class="container m4 clearfix">
-		<div class="clearfix">
-			<div class="mb4 sm-flex center nowrap">
-	<div class="flex-auto block">
-		<p class="inline h2">Blog</p> | <small class="muted">wwwwylin</small>
-	</div>
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">wwwwylin</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
-			<div class="mn1 center">
-	
-		<a href="/./" class="btn button-narrow">Home</a>
-	
-		<a href="/archives/" class="btn button-narrow">Archives</a>
-	
-	<a href="/search.html" class="btn button-narrow" onclick="loadJQuery(this, event);" data-modal>
-		<svg class="icon" data-icon="search"></svg>
-	</a>
-</div>
+<nav class="site-nav">
+  
 
-			<div class="p0 col col-12">
-				<div class="m0 py2">
-	<div class="md-col-12">
-		<div class="overflow-hidden bg-white rounded">
-			<div class="m1 p2 white">
-				<div class="clearfix">
-					<div class="left">
-						<h1 class="h2 m0"><a href="/2016/11/22/product_study_summary/" class="black">
-						产品小白学习概要
-						</a></h1>
-					</div>
-					<div class="right"><span class="h6 muted black">
-						Nov 22 2016
-					</span></div>
-				</div>
-			</div>
-			<div class="p2 border-top">
-				<a id="more"></a>
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/22/product_study_summary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wwwwylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                产品小白学习概要
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-22T19:26:19+08:00">
+                2016-11-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <a id="more"></a>
 <p><em>如果你是产品小白，如果你不知道当产品经理需要进行哪方面的学习，那么这篇文章希望能对你有所帮助！如文中有不足或不当之处期待你能友好指出ʘᴗʘ，若能进一步的交流或解惑那就更好了。</em></p>
 <p>前言：产品经理的工作贯穿了整个产品开发工作，从想法雏形的出现到产品的上线后维护及到最后的交接。此文将以产品经理所要进行的工作来展开产经的学习内容有哪些（学习概要汇总），细致的学习内容及心得体会这里就不扩展了。但是<strong>如果想要真正有所得的话，只看学习概要是没有用的，概要只是提供方向，要真正学有所得的话，还要自己对某方面的进行细致的学习并对所学知识及时做出整理和归类。</strong></p>
 <h2 id="1-需求分析"><a href="#1-需求分析" class="headerlink" title="1. 需求分析"></a>1. <strong>需求分析</strong></h2><p><strong>抓住某一想法之后并对想法进行进一步的扩展。</strong>这个时候需要的能力就要有：   </p>
@@ -164,80 +430,325 @@
 <h2 id="12-产品交接"><a href="#12-产品交接" class="headerlink" title="12. 产品交接"></a>12. 产品交接</h2><p><strong>跟一款产品总会有说再见的时候吧？但，也不能潇洒地只说一句再见就走人了。</strong>由于还未接触过这方面的事情，所以就不多说了，只是跟大家说一声，是会有这个事情出现的。</p>
 <p><em>末照旧，我的美好大世界才开始不久哩！期待你的参与⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄                  ——来自一只独行的求勾搭的野生产品君。</em></p>
 
-			</div>
-			<div class="p2 border-top">
-				<div class="clearfix">
-					<div class="left">
-						
-					</div>
-					<div class="ml2 right"><span class="h6 muted black"> </span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="clearfix mt2">
-		
-			<a href="/2016/12/31/taking_about_emoji/" class="left btn">
-			<svg class="icon" data-icon="chevron-left"></svg>
-			prev: 谈谈表情包产品吧
-		</a>
-		
-		
-		<a href="/2016/10/31/taking_about_hack/" class="right btn">
-			next: 武汉黑客马拉松感。
-			<svg class="icon" data-icon="chevron-right"></svg>
-		</a>
-		
-	</div>
-	
-	
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/31/taking_about_hack/" rel="next" title="武汉黑客马拉松感。">
+                <i class="fa fa-chevron-left"></i> 武汉黑客马拉松感。
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/31/taking_about_emoji/" rel="prev" title="谈谈表情包产品吧">
+                谈谈表情包产品吧 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="wwwwylin" />
+          <p class="site-author-name" itemprop="name">wwwwylin</p>
+           
+              <p class="site-description motion-element" itemprop="description">写有意思的文/做有意思的产品/(*≧∪≦)</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-需求分析"><span class="nav-number">1.</span> <span class="nav-text">1. 需求分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-竞品分析"><span class="nav-number">2.</span> <span class="nav-text">2. 竞品分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-用户调研（数据分析）"><span class="nav-number">3.</span> <span class="nav-text">3. 用户调研（数据分析）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-需求文档"><span class="nav-number">4.</span> <span class="nav-text">4. 需求文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-项目组会议"><span class="nav-number">5.</span> <span class="nav-text">5. 项目组会议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-原型设计"><span class="nav-number">6.</span> <span class="nav-text">6. 原型设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-可用性测试"><span class="nav-number">7.</span> <span class="nav-text">7. 可用性测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-产品开发"><span class="nav-number">8.</span> <span class="nav-text">8. 产品开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-上线前测试"><span class="nav-number">9.</span> <span class="nav-text">9. 上线前测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-产品上线"><span class="nav-number">10.</span> <span class="nav-text">10. 产品上线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-产品迭代"><span class="nav-number">11.</span> <span class="nav-text">11. 产品迭代</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-产品交接"><span class="nav-number">12.</span> <span class="nav-text">12. 产品交接</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wwwwylin</span>
 </div>
 
 
-			</div>
-		</div>
-	</section>
-	<div class="container mb2 clearfix">
-	<div class="sm-flex center nowrap mb2 h5">
-		<div class="flex-auto border-bottom">
-			<a href="https://hexo.io/" class="btn block muted">Hexo</a>
-		</div>
-		<div class="flex-auto border-bottom">
-			<a href="https://zllovesuki.git.sx/essays/2016/02/hexo-theme-weightless/" class="btn block">Weightless</a> Theme
-		</div>
-		<div class="flex-auto border-bottom">
-			Rocking <a href="http://www.basscss.com/" class="btn block">Basscss</a>
-		</div>
-		<div class="flex-auto border-bottom">
-			
-		</div>
-	</div>
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
-<script src="/js/geomicons.js"></script>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
 <script type="text/javascript">
-	var icons = document.querySelectorAll('[data-icon]');
-	geomicons.inject(icons);
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
-	<!-- Piwik -->
-	<script type="text/javascript">
-	  var _paq = _paq || [];
-	  _paq.push(['trackPageView']);
-	  _paq.push(['enableLinkTracking']);
-	  (function() {
-	    var u="//null/";
-	    _paq.push(['setTrackerUrl', u+'piwik.php']);
-	    _paq.push(['setSiteId', null]);
-	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	  })();
-	</script>
-	<noscript><p><img src="//null/piwik.php?idsite=null" style="border:0;" alt="" /></p></noscript>
-	<!-- End Piwik Code -->
 
 
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
 
 </body>
 </html>

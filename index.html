@@ -1,67 +1,333 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
 <head>
-	<meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-	
 
-	<title>Blog</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-	
-	
-	<link rel="stylesheet" href="/css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="/css/basscss.css" type="text/css">
-	<link rel="stylesheet" href="/css/basscss-ui-groups.css" type="text/css">
-	<link rel="stylesheet" href="/css/tomorrow.css" type="text/css">
-	<link rel="stylesheet" href="/css/style.css" type="text/css">
-	
-		<link href="https://dist.s3.fmt01.sdapi.net/fonts/lato-v11/lato-v11-all.css" rel="stylesheet" type="text/css">
-	
-	
 
-	<!--[if lt IE 9]><script src="/js/html5.js" type="text/javascript"></script><![endif]-->
-	<script src="/js/main.js" type="text/javascript"></script>
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="写有意思的文/做有意思的产品/(*≧∪≦)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="写有意思的文/做有意思的产品/(*≧∪≦)">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blog">
+<meta name="twitter:description" content="写有意思的文/做有意思的产品/(*≧∪≦)">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title> Blog </title>
 </head>
 
-<body>
-	<section class="container m4 clearfix">
-		<div class="clearfix">
-			<div class="mb4 sm-flex center nowrap">
-	<div class="flex-auto block">
-		<p class="inline h2">Blog</p> | <small class="muted">wwwwylin</small>
-	</div>
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">wwwwylin</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
-			<div class="mn1 center">
-	
-		<a href="/./" class="btn button-narrow">Home</a>
-	
-		<a href="/archives/" class="btn button-narrow">Archives</a>
-	
-	<a href="/search.html" class="btn button-narrow" onclick="loadJQuery(this, event);" data-modal>
-		<svg class="icon" data-icon="search"></svg>
-	</a>
-</div>
+<nav class="site-nav">
+  
 
-			<div class="p0 col col-12">
-				
-	<div class="m0 py2">
-	<div class="md-col-12">
-		<div class="overflow-hidden bg-white rounded">
-			<div class="m1 p2 white">
-				<div class="clearfix">
-					<div class="left">
-						<h1 class="h2 m0"><a href="/2017/02/22/summary_on_ccnubox_development/" class="black">
-						华师匣子项目总结
-						</a></h1>
-					</div>
-					<div class="right"><span class="h6 muted black">
-						Feb 22 2017
-					</span></div>
-				</div>
-			</div>
-			<div class="p2 border-top">
-				<p><em>安卓版</em>    </p>
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/22/summary_on_ccnubox_development/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wwwwylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/22/summary_on_ccnubox_development/" itemprop="url">
+                  华师匣子项目总结
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-22T19:41:50+08:00">
+                2017-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><em>安卓版</em>    </p>
 <p>华师匣子产品经理 | 林文雅</p>
 <h4 id="华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如："><a href="#华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如：" class="headerlink" title="华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如："></a><a href="http://ccnubox.muxixyz.com" target="_blank" rel="external">华师匣子</a>是一款专门为华师人打造的校园利器，主要解决在校难，如：</h4><ul>
 <li><em>新学期上课，课室到底是9-11还是9-21呀？</em></li>
@@ -216,39 +482,123 @@
 <p>10.15 产品新包及新版本开发准备   </p>
 <p>11.09 华师匣子二版开发正式开始</p>
 
-			</div>
-			<div class="p2 border-top">
-				<div class="clearfix">
-					<div class="left">
-						
-					</div>
-					<div class="ml2 right"><span class="h6 muted black"> </span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-</div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
 
 
-	<div class="m0 py2">
-	<div class="md-col-12">
-		<div class="overflow-hidden bg-white rounded">
-			<div class="m1 p2 white">
-				<div class="clearfix">
-					<div class="left">
-						<h1 class="h2 m0"><a href="/2017/01/02/taking-about-five/" class="black">
-						总把初心挂在嘴边的我
-						</a></h1>
-					</div>
-					<div class="right"><span class="h6 muted black">
-						Jan 2 2017
-					</span></div>
-				</div>
-			</div>
-			<div class="p2 border-top">
-				<p><em>初心不变是追求并渴望活出属于自己的光彩❤️</em></p>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/02/taking-about-five/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wwwwylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/01/02/taking-about-five/" itemprop="url">
+                  总把初心挂在嘴边的我
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-02T11:21:03+08:00">
+                2017-01-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><em>初心不变是追求并渴望活出属于自己的光彩❤️</em></p>
 <h3 id="如果有人问你，你现在或过去的大学（生活）是你想要的模样吗？"><a href="#如果有人问你，你现在或过去的大学（生活）是你想要的模样吗？" class="headerlink" title="如果有人问你，你现在或过去的大学（生活）是你想要的模样吗？"></a>如果有人问你，你现在或过去的大学（生活）是你想要的模样吗？</h3><p>也许并不是我想要的模样或是还不够。     </p>
 <p><strong>也许我可以更坚持些</strong>   </p>
 <p>自己快忙不过来的时候，还是会选择去学习英语口语    </p>
@@ -268,39 +618,123 @@
 <p>也许未来我还会是一个文艺青年<br>也许未来我是一名优秀的产品经理</p>
 <p>未来的模样，所憧憬的大学模样好像在大三之后才逐步地清晰起来了，知道自己想要抓住的是什么，不想沦落成哪般模样。虽然我也知道，这也只不过是人生道路上的寥寥认识，未来一直都在改变着，但是会改变或是会被蛊惑的不过是浮于外表的展现，而实际的对未来模样的追求和渴望其实一直都是不变的，<strong>我们的积极性其实应该一直都在，只不过环境会改，价值观会被塑造，但是初心不变的</strong>——我想成为那个更好的自己，活出属于自己的光彩。</p>
 
-			</div>
-			<div class="p2 border-top">
-				<div class="clearfix">
-					<div class="left">
-						
-					</div>
-					<div class="ml2 right"><span class="h6 muted black"> </span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-</div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
 
 
-	<div class="m0 py2">
-	<div class="md-col-12">
-		<div class="overflow-hidden bg-white rounded">
-			<div class="m1 p2 white">
-				<div class="clearfix">
-					<div class="left">
-						<h1 class="h2 m0"><a href="/2016/12/31/taking_about_emoji/" class="black">
-						谈谈表情包产品吧
-						</a></h1>
-					</div>
-					<div class="right"><span class="h6 muted black">
-						Dec 31 2016
-					</span></div>
-				</div>
-			</div>
-			<div class="p2 border-top">
-				<h6 id="现在表情包无处不入，不单单是青少年在用中老年人也在用，不单单是聊天在用，各种运营文都想通过表情包来给自家的文章润色或增添更多的趣味。"><a href="#现在表情包无处不入，不单单是青少年在用中老年人也在用，不单单是聊天在用，各种运营文都想通过表情包来给自家的文章润色或增添更多的趣味。" class="headerlink" title="现在表情包无处不入，不单单是青少年在用中老年人也在用，不单单是聊天在用，各种运营文都想通过表情包来给自家的文章润色或增添更多的趣味。"></a>现在表情包无处不入，不单单是青少年在用中老年人也在用，不单单是聊天在用，各种运营文都想通过表情包来给自家的文章润色或增添更多的趣味。</h6><p><br></p>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/31/taking_about_emoji/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wwwwylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/31/taking_about_emoji/" itemprop="url">
+                  谈谈表情包产品吧
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-31T15:33:50+08:00">
+                2016-12-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h6 id="现在表情包无处不入，不单单是青少年在用中老年人也在用，不单单是聊天在用，各种运营文都想通过表情包来给自家的文章润色或增添更多的趣味。"><a href="#现在表情包无处不入，不单单是青少年在用中老年人也在用，不单单是聊天在用，各种运营文都想通过表情包来给自家的文章润色或增添更多的趣味。" class="headerlink" title="现在表情包无处不入，不单单是青少年在用中老年人也在用，不单单是聊天在用，各种运营文都想通过表情包来给自家的文章润色或增添更多的趣味。"></a>现在表情包无处不入，不单单是青少年在用中老年人也在用，不单单是聊天在用，各种运营文都想通过表情包来给自家的文章润色或增添更多的趣味。</h6><p><br></p>
 <div style="Text-align: Center;"> <img src="http://img.hb.aicdn.com/c54fd2d9a70c93edb37c2599b32709f960d043766a1d-mEx1Pv_fw658"> </div>
 
 <p><br></p>
@@ -341,39 +775,123 @@
 <h6 id="简笔勾线栗子"><a href="#简笔勾线栗子" class="headerlink" title="简笔勾线栗子//"></a>简笔勾线栗子//</h6><p><img src="http://img.hb.aicdn.com/3ca24430a3d55f5e936bc577d0a2fd02d008d293bf49e-S580O8_fw658" alt=""></p>
 <h4 id="3）精致的表情图"><a href="#3）精致的表情图" class="headerlink" title="3）精致的表情图"></a>3）精致的表情图</h4><h5 id="精致的表情图欣赏的人会比使用的人多且由于本来欣赏的人就有限所以精致的表情图相对于常用表情图来说“传播”范围小且使用度低。"><a href="#精致的表情图欣赏的人会比使用的人多且由于本来欣赏的人就有限所以精致的表情图相对于常用表情图来说“传播”范围小且使用度低。" class="headerlink" title="精致的表情图欣赏的人会比使用的人多且由于本来欣赏的人就有限所以精致的表情图相对于常用表情图来说“传播”范围小且使用度低。"></a>精致的表情图欣赏的人会比使用的人多且由于本来欣赏的人就有限所以精致的表情图相对于常用表情图来说“传播”范围小且使用度低。</h5><h6 id="如选动物做模子的话，以树袋熊为例，会有两个问题：一是树袋熊它不是那么具有代表性的动物，如猫猫狗狗，同时如果做精致的话传播性会受限，即便是走可爱风也要比较轻量（如线条）同时处理可以粗糙一点，有打了马赛克或者是磨皮的感觉会更被使用。"><a href="#如选动物做模子的话，以树袋熊为例，会有两个问题：一是树袋熊它不是那么具有代表性的动物，如猫猫狗狗，同时如果做精致的话传播性会受限，即便是走可爱风也要比较轻量（如线条）同时处理可以粗糙一点，有打了马赛克或者是磨皮的感觉会更被使用。" class="headerlink" title="如选动物做模子的话，以树袋熊为例，会有两个问题：一是树袋熊它不是那么具有代表性的动物，如猫猫狗狗，同时如果做精致的话传播性会受限，即便是走可爱风也要比较轻量（如线条）同时处理可以粗糙一点，有打了马赛克或者是磨皮的感觉会更被使用。"></a>如选动物做模子的话，以树袋熊为例，会有两个问题：一是树袋熊它不是那么具有代表性的动物，如猫猫狗狗，同时如果做精致的话传播性会受限，即便是走可爱风也要比较轻量（如线条）同时处理可以粗糙一点，有打了马赛克或者是磨皮的感觉会更被使用。</h6><p><img src="http://img.hb.aicdn.com/a01fc2de96e239720eacd1411866597333bb7af0180fe2-amgfua_fw658" alt=""></p>
 
-			</div>
-			<div class="p2 border-top">
-				<div class="clearfix">
-					<div class="left">
-						
-					</div>
-					<div class="ml2 right"><span class="h6 muted black"> </span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-</div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
 
 
-	<div class="m0 py2">
-	<div class="md-col-12">
-		<div class="overflow-hidden bg-white rounded">
-			<div class="m1 p2 white">
-				<div class="clearfix">
-					<div class="left">
-						<h1 class="h2 m0"><a href="/2016/11/22/product_study_summary/" class="black">
-						产品小白学习概要
-						</a></h1>
-					</div>
-					<div class="right"><span class="h6 muted black">
-						Nov 22 2016
-					</span></div>
-				</div>
-			</div>
-			<div class="p2 border-top">
-				<a id="more"></a>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/22/product_study_summary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wwwwylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/22/product_study_summary/" itemprop="url">
+                  产品小白学习概要
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-22T19:26:19+08:00">
+                2016-11-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
 <p><em>如果你是产品小白，如果你不知道当产品经理需要进行哪方面的学习，那么这篇文章希望能对你有所帮助！如文中有不足或不当之处期待你能友好指出ʘᴗʘ，若能进一步的交流或解惑那就更好了。</em></p>
 <p>前言：产品经理的工作贯穿了整个产品开发工作，从想法雏形的出现到产品的上线后维护及到最后的交接。此文将以产品经理所要进行的工作来展开产经的学习内容有哪些（学习概要汇总），细致的学习内容及心得体会这里就不扩展了。但是<strong>如果想要真正有所得的话，只看学习概要是没有用的，概要只是提供方向，要真正学有所得的话，还要自己对某方面的进行细致的学习并对所学知识及时做出整理和归类。</strong></p>
 <h2 id="1-需求分析"><a href="#1-需求分析" class="headerlink" title="1. 需求分析"></a>1. <strong>需求分析</strong></h2><p><strong>抓住某一想法之后并对想法进行进一步的扩展。</strong>这个时候需要的能力就要有：   </p>
@@ -477,39 +995,123 @@
 <h2 id="12-产品交接"><a href="#12-产品交接" class="headerlink" title="12. 产品交接"></a>12. 产品交接</h2><p><strong>跟一款产品总会有说再见的时候吧？但，也不能潇洒地只说一句再见就走人了。</strong>由于还未接触过这方面的事情，所以就不多说了，只是跟大家说一声，是会有这个事情出现的。</p>
 <p><em>末照旧，我的美好大世界才开始不久哩！期待你的参与⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄                  ——来自一只独行的求勾搭的野生产品君。</em></p>
 
-			</div>
-			<div class="p2 border-top">
-				<div class="clearfix">
-					<div class="left">
-						
-					</div>
-					<div class="ml2 right"><span class="h6 muted black"> </span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-</div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
 
 
-	<div class="m0 py2">
-	<div class="md-col-12">
-		<div class="overflow-hidden bg-white rounded">
-			<div class="m1 p2 white">
-				<div class="clearfix">
-					<div class="left">
-						<h1 class="h2 m0"><a href="/2016/10/31/taking_about_hack/" class="black">
-						武汉黑客马拉松感。
-						</a></h1>
-					</div>
-					<div class="right"><span class="h6 muted black">
-						Oct 31 2016
-					</span></div>
-				</div>
-			</div>
-			<div class="p2 border-top">
-				<p><em>2016年10月29－30日武汉黑客马拉松</em></p>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/31/taking_about_hack/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wwwwylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/10/31/taking_about_hack/" itemprop="url">
+                  武汉黑客马拉松感。
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-31T22:33:50+08:00">
+                2016-10-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><em>2016年10月29－30日武汉黑客马拉松</em></p>
 <h3 id="一、勇敢后看见可能"><a href="#一、勇敢后看见可能" class="headerlink" title="一、勇敢后看见可能"></a>一、勇敢后看见可能</h3><p>绝大多数人在做一件事情之前，想必都会考虑到这个事情被实现的可能性有多大。而这对当前主流还是”只看重结果而不着眼于过程”的现实社会来说一点也不奇怪，相反是值得被”提倡”的吧。再者，人总是过多通过主观意识来判断可能性的大小，却往往忽视客观环境的存在。所以，当自身想做的事情是从未做过的或将会成为人生一大转折点时，人总是会低估了事情被实现的可能性。这样拘于结果所带来的弊端是让自己丧失了一定的创造力的同时，也丧失了突破自己的可能，而我也总是在这方面躺枪。在这里，十分感谢我的组员刘指导，是他对开发的热情感染了我参加此次比赛，让我为此次游戏开发出谋划策的同时，发现了勇敢之后的可能！我们也是可以开发出自己想要打造的游戏的！我们也是可以打造出好玩的游戏的！我们是可以开发有趣的产品的！未来的未来我们做出的东西也是可以得到社会各界青睐的！虽然在赛后并没有获得奖项（原因各种？），但在这个过程中所感受到的”自认为原本不可能”的可能让我十分受益和满足。啊，充满着可能和创造的人生将会是那样精彩？！</p>
 <h3 id="二、良好的作战状态"><a href="#二、良好的作战状态" class="headerlink" title="二、良好的作战状态"></a>二、良好的作战状态</h3><p>之所以提到这个是因为，比赛终归是比赛，即便是抱着去玩的心态，也要把赢得比赛的可能最大化，自身能力的发挥最大化吧？所以，良好的作战状态就显得很重要了的。然后回顾一下此次比赛和以往的相关经历，良好的作战状态不过于抓住作战的核心——主要是干什么的，并且要得到怎样的结果、用热情去化解生理带来的疲倦感以及在”交付”的时候把自己所做的最大化地展示出来，能做到让人眼前一亮或是看到你在作战过程中发现问题和解决问题的能力那就更好了。在这次比赛中，对自己最不满意也是最遗憾的地方就是在产品介绍时没有很好地展示出小组开发的产品，事后在自我反省时，刚开始是认为自己是否因为没有睡好所以展示时大脑转的不够快速、思考得不够完善，但是在多次回顾当时表现后觉得这个原因不太站得住脚。后面在进一步的思考过后，感觉自己是过早地放松了，没有更积极、更要求自己去把这件事情做好，也就没有继续跟组员要求我们先在台下做一个预产品介绍，看大家是否配合妥当、自己想的是否欠缺。当然也不止是这一件，只是我对这一件印象最深刻，毕竟它直接导致了最终的结果产生吧。说如何能够保持良好的作战状态，大道理都懂，而能不能做到、做到的程度能有多高就要看自己在实践中的被打磨程度了。</p>
 <h3 id="三、享受小组内协作"><a href="#三、享受小组内协作" class="headerlink" title="三、享受小组内协作"></a>三、享受小组内协作</h3><p>一个人奋斗总是相对孤独的吧，特别是为着一个自己自认为很有意思的东西奋斗却找不到伯乐的时候。所以小组工作的好处其实不只在于它能够在组员协作时让组员各展所长、各补己短，更在于在组员协作时组员在期间获得的满足感和幸福感——他们为着一个共同的目标在奋斗着、讨论着甚至是争吵着，但都是为了同一个目标！参加了两次武汉举办的黑客马拉松，两次都是和梁非凡搭档UED工作，两次都是做在她左手边，所以跟她合作的体会更加强烈吧。虽然我们经常对一件事情会有”争吵”，但是在争吵之后我们都会发现原有的不足。在讨论可行的解决方案时，有时还会有意想不到的收获，而这样真的很棒！当刘指导把游戏真的写出来，实现了基础的指尖点击对打功能之后真的很开心，莫名的开心不需要言语的表达只期待他赶紧部署后让我们都玩嗨起来！</p>
@@ -548,39 +1150,123 @@
 
 <p><br></p>
 
-			</div>
-			<div class="p2 border-top">
-				<div class="clearfix">
-					<div class="left">
-						
-					</div>
-					<div class="ml2 right"><span class="h6 muted black"> </span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-</div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
 
 
-	<div class="m0 py2">
-	<div class="md-col-12">
-		<div class="overflow-hidden bg-white rounded">
-			<div class="m1 p2 white">
-				<div class="clearfix">
-					<div class="left">
-						<h1 class="h2 m0"><a href="/2016/07/30/taking-about-teamwork/" class="black">
-						要怎么带动一个团队
-						</a></h1>
-					</div>
-					<div class="right"><span class="h6 muted black">
-						Jul 30 2016
-					</span></div>
-				</div>
-			</div>
-			<div class="p2 border-top">
-				<p><em>本文将以小步在某一职能部门微信平台（以岗岗称呼）的“负责人”经历，展开对“如何带动一个团队工作”的反思及行动转变。旨在能与大家分享，若能有所交流那就更好了。</em></p>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/30/taking-about-teamwork/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wwwwylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/07/30/taking-about-teamwork/" itemprop="url">
+                  要怎么带动一个团队
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-07-30T11:21:03+08:00">
+                2016-07-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><em>本文将以小步在某一职能部门微信平台（以岗岗称呼）的“负责人”经历，展开对“如何带动一个团队工作”的反思及行动转变。旨在能与大家分享，若能有所交流那就更好了。</em></p>
 <h3 id="2015年4月—2015年9月"><a href="#2015年4月—2015年9月" class="headerlink" title="2015年4月—2015年9月"></a>2015年4月—2015年9月</h3><h3 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h3><p>当时岗岗的微信平台还刚开始发展，负责人1名，组员4名，我是组员。那时候，负责人并不会给我们任务内容，也不会组织我们进行讨论，偶尔的上头说起了微信这么一个事的时候负责人才会把我们召集起来开一个会议说当前微信要做什么改变。</p>
 <h3 id="二、发展"><a href="#二、发展" class="headerlink" title="二、发展"></a>二、发展</h3><p>那个时候我刚进岗岗一个月，持续高涨的热情也让我在原有基础上对微信的工作报以更认真负责的态度，所以无形之中，微信平台的推动担子就到了我的肩上。我开始有意识地去组织会议，有意识地去跟组员们交流要微信平台的消息内容要怎么发。</p>
 <h3 id="三、高潮"><a href="#三、高潮" class="headerlink" title="三、高潮"></a>三、高潮</h3><p>后来微信组就像是无领导小组，而我逐步扮演着领导的角色，如既然消息推送的方式和时间大家都不积极主动提建议的话，那么我们就每个月4条吧，每个人负责一条、既然方天说他不会排版什么的，那么我们就每个人负责一个工作吧，比如方天就负责去找资料、这图文的排版是不是有点太乱了，这里加一些标题会不会比较好等。虽然在这个过程中，像是跟组员交流之后产生的结果，但是更像是我个人的一种决定，你要怎样做、微信平台要怎么做才是合适的，但是我并不是他们的领导啊，我们的关系是同事关系！这样不知觉的定位导致了自己很多事情本来可以让别人承担的、交给别人负责的，但是总觉得别人不能够做好或是觉得没有心思去做好就自己揽下了或是制定了详细的要求之后再交给别人。于是，组员也开始被动地工作，而不是说是我们集体去建设微信平台而是他们要完成我的任务罢了。</p>
@@ -648,39 +1334,123 @@
 </ol>
 <p><em>由于注重营造团队归属感，通过放宽自主权、增加鼓励机制等调动组员的工作热情，极大保证和提高了工作效率，较快推动了微信平台的发展。</em></p>
 
-			</div>
-			<div class="p2 border-top">
-				<div class="clearfix">
-					<div class="left">
-						
-					</div>
-					<div class="ml2 right"><span class="h6 muted black"> </span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-</div>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
 
 
-	<div class="m0 py2">
-	<div class="md-col-12">
-		<div class="overflow-hidden bg-white rounded">
-			<div class="m1 p2 white">
-				<div class="clearfix">
-					<div class="left">
-						<h1 class="h2 m0"><a href="/2016/05/20/taking_about_usability testing/" class="black">
-						4步拿下可用性测试
-						</a></h1>
-					</div>
-					<div class="right"><span class="h6 muted black">
-						May 20 2016
-					</span></div>
-				</div>
-			</div>
-			<div class="p2 border-top">
-				<p><strong>可用性测试是为了检测产品可用性而进行的相关测试。产品可用性是指：用户能够通过一系列的操作（即相关的功能路径），最终达到预设的目的。可用性测试一般在原型（高保真原型）出来后进行。</strong></p>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/20/taking_about_usability testing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wwwwylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/05/20/taking_about_usability testing/" itemprop="url">
+                  4步拿下可用性测试
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-20T22:33:50+08:00">
+                2016-05-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>可用性测试是为了检测产品可用性而进行的相关测试。产品可用性是指：用户能够通过一系列的操作（即相关的功能路径），最终达到预设的目的。可用性测试一般在原型（高保真原型）出来后进行。</strong></p>
 <p>可用性测试内容可分为以下四步：拟定测试目标、确立测试模型、制定测试安排以及完善产品原型（测试情况分析）。</p>
 <h3 id="第一步：拟定测试目标"><a href="#第一步：拟定测试目标" class="headerlink" title="第一步：拟定测试目标"></a>第一步：拟定测试目标</h3><p>拟定目标是为了确定当前测试要测试的场景、场景内容的设置、回归测试中分析的方向等，是贯穿整个可用性测试的重要依据。如上线前要进行手机淘宝可用性测试，若拟定的目标是用户能够更快选择到自己喜好的商品，并能快捷进行购买。那么场景设置就会以选择商品和购买商品展开；若拟定的目标是用户能够快捷将自己喜欢的产品分享出去，那么场景设置就会以分享产品展开。这也说明了，在拟定测试目标时，要切实结合当前产品的开发内容。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1463304-c6752fec8aaff329.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="拟定测试目标"></p>
@@ -707,93 +1477,267 @@
 <p>文中只是概括了进行可用性测试的工作纲要，进一步了解可查看我整理的脑图：<a href="http://naotu.baidu.com/file/299ff990106b70206d6b3968af8fd0e9" target="_blank" rel="external">可用性测试</a>。    </p>
 <p><em>如文中有不足或不当之处期待你能友好指出ʘᴗʘ，若能进一步的交流或解惑那就更好了。</em></p>
 
-			</div>
-			<div class="p2 border-top">
-				<div class="clearfix">
-					<div class="left">
-						
-					</div>
-					<div class="ml2 right"><span class="h6 muted black"> </span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+
+          
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="wwwwylin" />
+          <p class="site-author-name" itemprop="name">wwwwylin</p>
+           
+              <p class="site-description motion-element" itemprop="description">写有意思的文/做有意思的产品/(*≧∪≦)</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wwwwylin</span>
 </div>
 
 
-<div class="clearfix">
-	
-	
-	<div class="overflow-hidden sm-show center">
-		
-			<a href="/" class="btn btn-primary bg-gray">1</a>
-		
-		
-		
-			
-		
-			
-		
-		
-		
-			
-		
-			
-		
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
 
-		
-
-		
-	</div>
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
 </div>
 
 
+        
 
-			</div>
-		</div>
-	</section>
-	<div class="container mb2 clearfix">
-	<div class="sm-flex center nowrap mb2 h5">
-		<div class="flex-auto border-bottom">
-			<a href="https://hexo.io/" class="btn block muted">Hexo</a>
-		</div>
-		<div class="flex-auto border-bottom">
-			<a href="https://zllovesuki.git.sx/essays/2016/02/hexo-theme-weightless/" class="btn block">Weightless</a> Theme
-		</div>
-		<div class="flex-auto border-bottom">
-			Rocking <a href="http://www.basscss.com/" class="btn block">Basscss</a>
-		</div>
-		<div class="flex-auto border-bottom">
-			
-		</div>
-	</div>
-</div>
-<script src="/js/geomicons.js"></script>
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
 <script type="text/javascript">
-	var icons = document.querySelectorAll('[data-icon]');
-	geomicons.inject(icons);
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
-	<!-- Piwik -->
-	<script type="text/javascript">
-	  var _paq = _paq || [];
-	  _paq.push(['trackPageView']);
-	  _paq.push(['enableLinkTracking']);
-	  (function() {
-	    var u="//null/";
-	    _paq.push(['setTrackerUrl', u+'piwik.php']);
-	    _paq.push(['setSiteId', null]);
-	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	  })();
-	</script>
-	<noscript><p><img src="//null/piwik.php?idsite=null" style="border:0;" alt="" /></p></noscript>
-	<!-- End Piwik Code -->
 
 
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
 
 </body>
 </html>

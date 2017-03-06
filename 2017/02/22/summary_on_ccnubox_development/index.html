@@ -1,66 +1,360 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
 <head>
-	<meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-	
 
-	<title>华师匣子项目总结 | Blog</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-	
-	
-	<link rel="stylesheet" href="/css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="/css/basscss.css" type="text/css">
-	<link rel="stylesheet" href="/css/basscss-ui-groups.css" type="text/css">
-	<link rel="stylesheet" href="/css/tomorrow.css" type="text/css">
-	<link rel="stylesheet" href="/css/style.css" type="text/css">
-	
-		<link href="https://dist.s3.fmt01.sdapi.net/fonts/lato-v11/lato-v11-all.css" rel="stylesheet" type="text/css">
-	
-	
 
-	<!--[if lt IE 9]><script src="/js/html5.js" type="text/javascript"></script><![endif]-->
-	<script src="/js/main.js" type="text/javascript"></script>
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="安卓版    
+华师匣子产品经理 | 林文雅
+华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如：
+新学期上课，课室到底是9-11还是9-21呀？
+饭卡到底剩下几块钱啊，中午想吃黄焖鸡哎(:зゝ∠)
+听说新成绩已经出了，好想查啊，可是电脑不在身边哎
+宿舍突然停电是什么鬼？！
+运动会是哪三天来着？我想规划一下出游计划，嘿嘿嘿
+教务处电话是多少啊？问了好多人都不知道啊！蓝瘦香菇TT.
+… …">
+<meta property="og:type" content="article">
+<meta property="og:title" content="华师匣子项目总结">
+<meta property="og:url" content="http://yoursite.com/2017/02/22/summary_on_ccnubox_development/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="安卓版    
+华师匣子产品经理 | 林文雅
+华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如：
+新学期上课，课室到底是9-11还是9-21呀？
+饭卡到底剩下几块钱啊，中午想吃黄焖鸡哎(:зゝ∠)
+听说新成绩已经出了，好想查啊，可是电脑不在身边哎
+宿舍突然停电是什么鬼？！
+运动会是哪三天来着？我想规划一下出游计划，嘿嘿嘿
+教务处电话是多少啊？问了好多人都不知道啊！蓝瘦香菇TT.
+… …">
+<meta property="og:image" content="http://oi0ie82j6.bkt.clouddn.com/%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%83%85%E5%86%B5.png">
+<meta property="og:image" content="http://img.hb.aicdn.com/62b992be3a9bd913e6d1d7809eb177660340ccac2268f-WxWdJ9_fw658">
+<meta property="og:image" content="http://img.hb.aicdn.com/02466666f39fb8d3e7dc74a33df4a7044758a46a1e1b1-oENx60_fw658">
+<meta property="og:image" content="http://img.hb.aicdn.com/96dc9ddb918b91cd52b0892b8b4aa23c4bacd0ee4560c-ol7Pyi_fw658">
+<meta property="og:image" content="http://oi0ie82j6.bkt.clouddn.com/%E6%9C%A8%E7%8A%80%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E4%BD%93%E7%B3%BB.png">
+<meta property="og:updated_time" content="2017-03-05T04:11:09.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="华师匣子项目总结">
+<meta name="twitter:description" content="安卓版    
+华师匣子产品经理 | 林文雅
+华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如：
+新学期上课，课室到底是9-11还是9-21呀？
+饭卡到底剩下几块钱啊，中午想吃黄焖鸡哎(:зゝ∠)
+听说新成绩已经出了，好想查啊，可是电脑不在身边哎
+宿舍突然停电是什么鬼？！
+运动会是哪三天来着？我想规划一下出游计划，嘿嘿嘿
+教务处电话是多少啊？问了好多人都不知道啊！蓝瘦香菇TT.
+… …">
+<meta name="twitter:image" content="http://oi0ie82j6.bkt.clouddn.com/%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%83%85%E5%86%B5.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/02/22/summary_on_ccnubox_development/"/>
+
+
+
+
+
+  <title> 华师匣子项目总结 | Blog </title>
 </head>
 
-<body>
-	<section class="container m4 clearfix">
-		<div class="clearfix">
-			<div class="mb4 sm-flex center nowrap">
-	<div class="flex-auto block">
-		<p class="inline h2">Blog</p> | <small class="muted">wwwwylin</small>
-	</div>
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">wwwwylin</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
-			<div class="mn1 center">
-	
-		<a href="/./" class="btn button-narrow">Home</a>
-	
-		<a href="/archives/" class="btn button-narrow">Archives</a>
-	
-	<a href="/search.html" class="btn button-narrow" onclick="loadJQuery(this, event);" data-modal>
-		<svg class="icon" data-icon="search"></svg>
-	</a>
-</div>
+<nav class="site-nav">
+  
 
-			<div class="p0 col col-12">
-				<div class="m0 py2">
-	<div class="md-col-12">
-		<div class="overflow-hidden bg-white rounded">
-			<div class="m1 p2 white">
-				<div class="clearfix">
-					<div class="left">
-						<h1 class="h2 m0"><a href="/2017/02/22/summary_on_ccnubox_development/" class="black">
-						华师匣子项目总结
-						</a></h1>
-					</div>
-					<div class="right"><span class="h6 muted black">
-						Feb 22 2017
-					</span></div>
-				</div>
-			</div>
-			<div class="p2 border-top">
-				<p><em>安卓版</em>    </p>
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/22/summary_on_ccnubox_development/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wwwwylin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                华师匣子项目总结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-22T19:41:50+08:00">
+                2017-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><em>安卓版</em>    </p>
 <p>华师匣子产品经理 | 林文雅</p>
 <h4 id="华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如："><a href="#华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如：" class="headerlink" title="华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如："></a><a href="http://ccnubox.muxixyz.com" target="_blank" rel="external">华师匣子</a>是一款专门为华师人打造的校园利器，主要解决在校难，如：</h4><ul>
 <li><em>新学期上课，课室到底是9-11还是9-21呀？</em></li>
@@ -215,75 +509,321 @@
 <p>10.15 产品新包及新版本开发准备   </p>
 <p>11.09 华师匣子二版开发正式开始</p>
 
-			</div>
-			<div class="p2 border-top">
-				<div class="clearfix">
-					<div class="left">
-						
-					</div>
-					<div class="ml2 right"><span class="h6 muted black"> </span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="clearfix mt2">
-		
-		
-		<a href="/2017/01/02/taking-about-five/" class="right btn">
-			next: 总把初心挂在嘴边的我
-			<svg class="icon" data-icon="chevron-right"></svg>
-		</a>
-		
-	</div>
-	
-	
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/02/taking-about-five/" rel="next" title="总把初心挂在嘴边的我">
+                <i class="fa fa-chevron-left"></i> 总把初心挂在嘴边的我
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="wwwwylin" />
+          <p class="site-author-name" itemprop="name">wwwwylin</p>
+           
+              <p class="site-description motion-element" itemprop="description">写有意思的文/做有意思的产品/(*≧∪≦)</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如："><span class="nav-number">1.</span> <span class="nav-text">华师匣子是一款专门为华师人打造的校园利器，主要解决在校难，如：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#华师匣子"><span class="nav-number"></span> <span class="nav-text">华师匣子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-产品定位"><span class="nav-number"></span> <span class="nav-text">1. 产品定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-目标人群"><span class="nav-number"></span> <span class="nav-text">2. 目标人群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-产品功能"><span class="nav-number"></span> <span class="nav-text">3. 产品功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-开发人员"><span class="nav-number"></span> <span class="nav-text">4.开发人员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-产品成果"><span class="nav-number"></span> <span class="nav-text">5.产品成果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发工作"><span class="nav-number"></span> <span class="nav-text">开发工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在此次匣子开发过程中，主要负责的工作有："><span class="nav-number">1.</span> <span class="nav-text">在此次匣子开发过程中，主要负责的工作有：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一、前期工作准备充足主要体现在："><span class="nav-number">2.</span> <span class="nav-text">一、前期工作准备充足主要体现在：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1）需求挖掘和分析是基础"><span class="nav-number">2.1.</span> <span class="nav-text">1）需求挖掘和分析是基础</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#打造匣子源于队长的一个想法，希望打造一款APP能够解决华师人在校学习和生活难题，于是我们就开始鼓动团内成员对产品功能进行头脑风暴。"><span class="nav-number">2.1.1.</span> <span class="nav-text">打造匣子源于队长的一个想法，希望打造一款APP能够解决华师人在校学习和生活难题，于是我们就开始鼓动团内成员对产品功能进行头脑风暴。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#当时我接触的开发模式是两类：精益开发和传统开发，而精益开发主要通过打造出MVP（最小可行产品）来满足用户的基本需求，注重的是能够快速开发出产品，并通过用户反馈等进一步完善产品。传统开发则更注重所打造产品需求的全面性、覆盖性。"><span class="nav-number">2.2.</span> <span class="nav-text">当时我接触的开发模式是两类：精益开发和传统开发，而精益开发主要通过打造出MVP（最小可行产品）来满足用户的基本需求，注重的是能够快速开发出产品，并通过用户反馈等进一步完善产品。传统开发则更注重所打造产品需求的全面性、覆盖性。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#当时匣子选择的是精益开发的方式（虽然当初我们并不知道这种叫精益开发（luck）），由于是初次接触产品开发，同时为了避免心太大影响产品质量，故选择功能精简开发的方式，拒绝功能冗杂或追求全面。"><span class="nav-number">2.2.1.</span> <span class="nav-text">当时匣子选择的是精益开发的方式（虽然当初我们并不知道这种叫精益开发（luck）），由于是初次接触产品开发，同时为了避免心太大影响产品质量，故选择功能精简开发的方式，拒绝功能冗杂或追求全面。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#根据大家提供的风暴讯息，并结合匣子的产品定位和开发模式最终制定了匣子MVP初版。在这个过程中我们做了许多取舍，特别是我自己。"><span class="nav-number">2.3.</span> <span class="nav-text">根据大家提供的风暴讯息，并结合匣子的产品定位和开发模式最终制定了匣子MVP初版。在这个过程中我们做了许多取舍，特别是我自己。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#通知公告是否需要做历史信息记录？这个看似很平常的问题，我却在这里做了很久的纠结。其实加一个历史信息记录并不会使得通知公告这一大块功能变得冗杂，但是放在整个华师匣子一版开发考虑的话，通过公告增加一个历史信息记录是否过于精（细）了，如果要提供历史记录的话其实还应该要有一个搜索吧，帮助用户进行快速查找信息。同时历史信息记录到底是要提供几天的历史信息，是要三天、一周、一个月还是全部？最终这个需求被我砍掉了，并不是觉得它不被需要才砍掉的，只是觉得在当前的开发情况下，这个需求更可能会在二版或是三版中出现。"><span class="nav-number">2.3.1.</span> <span class="nav-text">通知公告是否需要做历史信息记录？这个看似很平常的问题，我却在这里做了很久的纠结。其实加一个历史信息记录并不会使得通知公告这一大块功能变得冗杂，但是放在整个华师匣子一版开发考虑的话，通过公告增加一个历史信息记录是否过于精（细）了，如果要提供历史记录的话其实还应该要有一个搜索吧，帮助用户进行快速查找信息。同时历史信息记录到底是要提供几天的历史信息，是要三天、一周、一个月还是全部？最终这个需求被我砍掉了，并不是觉得它不被需要才砍掉的，只是觉得在当前的开发情况下，这个需求更可能会在二版或是三版中出现。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在需求取舍的过程中深刻感受到产品定位和产品规划的重要性，它们是做出判断的重要标准。确定好产品发展规划能够明确未来版本中产品功能拓展的方向，还能给产品原型设计做出有意义的指导。"><span class="nav-number">2.4.</span> <span class="nav-text">在需求取舍的过程中深刻感受到产品定位和产品规划的重要性，它们是做出判断的重要标准。确定好产品发展规划能够明确未来版本中产品功能拓展的方向，还能给产品原型设计做出有意义的指导。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#在做取舍的过程中还有一个值得提到的地方就是，因为我是第一次接触产品开发，虽然是匣子的产品经理但是团队里面有已经开发过产品的老人，所以当自己的想法与他们想法相悖或是被他们否决时，就会不自觉地打压自己。"><span class="nav-number">2.4.1.</span> <span class="nav-text">在做取舍的过程中还有一个值得提到的地方就是，因为我是第一次接触产品开发，虽然是匣子的产品经理但是团队里面有已经开发过产品的老人，所以当自己的想法与他们想法相悖或是被他们否决时，就会不自觉地打压自己。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#经过匣子一版及其余小型项目开发之后发现，做需求取舍时还应当适当去倾听自己内心的声音，去了解自己为什么想要提出这个需求，这样的需求是被需要的吗，为什么需要等，并向别人【表明自己的想法及考虑】。要相信自己是最熟悉自己产品，也是最想表达出产品理念的人。"><span class="nav-number">2.5.</span> <span class="nav-text">经过匣子一版及其余小型项目开发之后发现，做需求取舍时还应当适当去倾听自己内心的声音，去了解自己为什么想要提出这个需求，这样的需求是被需要的吗，为什么需要等，并向别人【表明自己的想法及考虑】。要相信自己是最熟悉自己产品，也是最想表达出产品理念的人。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#即便到最后需求未被采纳，这思考的过程、倾听自己内心声音的过程也是必不可少，值得花时间去做的。"><span class="nav-number">2.5.1.</span> <span class="nav-text">即便到最后需求未被采纳，这思考的过程、倾听自己内心声音的过程也是必不可少，值得花时间去做的。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#确定需求（产品功能）只是第一步，需求的细化也就是功能信息架构的搭建是隐形的大boss。"><span class="nav-number">2.5.2.</span> <span class="nav-text">确定需求（产品功能）只是第一步，需求的细化也就是功能信息架构的搭建是隐形的大boss。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#确定基本功能后匣子开始搭建信息架构，比如课程查看功能要展示的课程信息是什么、需要怎么查看；课程添加功能要如何添加、添加课程的信息有什么、添加课程之后课程表会有什么改变等。"><span class="nav-number">2.6.</span> <span class="nav-text">确定基本功能后匣子开始搭建信息架构，比如课程查看功能要展示的课程信息是什么、需要怎么查看；课程添加功能要如何添加、添加课程的信息有什么、添加课程之后课程表会有什么改变等。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#如果只是凭感觉直接进入原型设计而不确定产品功能信息架构，那么自身搭建起来的产品功能是不全面的，会出现细致功能遗漏的情况，导致理所当能能实现的功能并不能理想实现。"><span class="nav-number">2.6.1.</span> <span class="nav-text">如果只是凭感觉直接进入原型设计而不确定产品功能信息架构，那么自身搭建起来的产品功能是不全面的，会出现细致功能遗漏的情况，导致理所当能能实现的功能并不能理想实现。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#搭建信息架构紧密的思维逻辑能力十分重要，且要对功能的使用场景有一个全面的把握，需要的信息是什么，想要达到怎样的效果，会遇到怎样的问题并要如何解决都需要被考虑到。值得强调的是搭建信息架构并不是一次性就能够完成的或者说并不是一次就达到完美的状态，在匣子开发过程中我采取的方式是不同时间二次查看，同时与项目组成员展开激烈讨论，在开发过程中及时与开发工程师交流来减低由于信息架构搭建不全面引发问题的可能性。"><span class="nav-number">2.7.</span> <span class="nav-text">搭建信息架构紧密的思维逻辑能力十分重要，且要对功能的使用场景有一个全面的把握，需要的信息是什么，想要达到怎样的效果，会遇到怎样的问题并要如何解决都需要被考虑到。值得强调的是搭建信息架构并不是一次性就能够完成的或者说并不是一次就达到完美的状态，在匣子开发过程中我采取的方式是不同时间二次查看，同时与项目组成员展开激烈讨论，在开发过程中及时与开发工程师交流来减低由于信息架构搭建不全面引发问题的可能性。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#搭建华师匣子功能信息架构时总是觉得恍惚间就一个下午过去了，毫不察觉的那种。沉浸在功能搭建的海洋里并且进行思维逻辑活动虽然十分累，但是却十分享受。在看到一个个基础功能在自己的努力后逐渐丰富和全面起来就感到无比开心和满足。"><span class="nav-number">2.7.1.</span> <span class="nav-text">搭建华师匣子功能信息架构时总是觉得恍惚间就一个下午过去了，毫不察觉的那种。沉浸在功能搭建的海洋里并且进行思维逻辑活动虽然十分累，但是却十分享受。在看到一个个基础功能在自己的努力后逐渐丰富和全面起来就感到无比开心和满足。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#初涉产品经理时观看的是《启示录》，里边很大篇幅讲到了“可用性测试”的内容。于是在匣子原型设计之后，也有意识地组织开展了原型测试的可用性测试。"><span class="nav-number">2.7.2.</span> <span class="nav-text">初涉产品经理时观看的是《启示录》，里边很大篇幅讲到了“可用性测试”的内容。于是在匣子原型设计之后，也有意识地组织开展了原型测试的可用性测试。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#匣子的可用性测试主要以场景测试为主，以纸质模型任务式的方式进行测试。测试前做的工作主要有：了解可用性测试涵盖的内容、此次可用性测试的目的以及主要测试场景的确定、测试人员安排等。"><span class="nav-number">2.8.</span> <span class="nav-text">匣子的可用性测试主要以场景测试为主，以纸质模型任务式的方式进行测试。测试前做的工作主要有：了解可用性测试涵盖的内容、此次可用性测试的目的以及主要测试场景的确定、测试人员安排等。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#其实可用性测试中最难的并不是策划，而是如何将被测者带入测试场景，向被测者提出任务但是不引导他们做出选择。同时，在提出任务时也不被被测者影响，与被测者进行非必要的交流。这需要测试者有很强的自控力和场景把控能力。"><span class="nav-number">2.8.1.</span> <span class="nav-text">其实可用性测试中最难的并不是策划，而是如何将被测者带入测试场景，向被测者提出任务但是不引导他们做出选择。同时，在提出任务时也不被被测者影响，与被测者进行非必要的交流。这需要测试者有很强的自控力和场景把控能力。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试时进行录制或是录音，以保证需要对场景进行回顾和确认。同时在测试过程中，测试者要及时记录好测试过程中被测者遇到的问题有哪些，即便只是简单的迟疑，也需要记录情况，待测试结束后再询问被测者为何感到迟疑，进一步确认问题产生的情况。测试结束后对测试情况进行汇总和分析，修改和完善原型。"><span class="nav-number">2.9.</span> <span class="nav-text">测试时进行录制或是录音，以保证需要对场景进行回顾和确认。同时在测试过程中，测试者要及时记录好测试过程中被测者遇到的问题有哪些，即便只是简单的迟疑，也需要记录情况，待测试结束后再询问被测者为何感到迟疑，进一步确认问题产生的情况。测试结束后对测试情况进行汇总和分析，修改和完善原型。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#最终我是将测试情况汇总在表格当中并根据表格信息对产品原型设计情况做进一步处理。需要解决还是不需要解决，解决的方案又是什么都在汇总表当中标明。"><span class="nav-number">2.9.1.</span> <span class="nav-text">最终我是将测试情况汇总在表格当中并根据表格信息对产品原型设计情况做进一步处理。需要解决还是不需要解决，解决的方案又是什么都在汇总表当中标明。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、功能路径设计清晰主要体现在："><span class="nav-number">3.</span> <span class="nav-text">二、功能路径设计清晰主要体现在：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#由于华师匣子本身是工具类产品，生动比喻的话匣子就像是一个解决校园在校难各种工具的收藏夹，所以匣子的功能切分会比较清楚，各功能间的相关性较低。这方便功能信息架构搭建的同时，也减轻了功能路径设计的难度。"><span class="nav-number">3.0.1.</span> <span class="nav-text">由于华师匣子本身是工具类产品，生动比喻的话匣子就像是一个解决校园在校难各种工具的收藏夹，所以匣子的功能切分会比较清楚，各功能间的相关性较低。这方便功能信息架构搭建的同时，也减轻了功能路径设计的难度。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#基于华师匣子功能块切分明显的前提下进行功能信息架构搭建，对各大功能进行功能的穷尽，直到最后呈现给用户的每一种状态。"><span class="nav-number">3.0.2.</span> <span class="nav-text">基于华师匣子功能块切分明显的前提下进行功能信息架构搭建，对各大功能进行功能的穷尽，直到最后呈现给用户的每一种状态。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#信息架构搭建时是采用了百度脑图作为思维拓宽的辅助工具，做到进行逻辑思考的同时能实时记录。需要注意的是在进行思维逻辑时需要保持在一个专注并轻松的状态。"><span class="nav-number">3.1.</span> <span class="nav-text">信息架构搭建时是采用了百度脑图作为思维拓宽的辅助工具，做到进行逻辑思考的同时能实时记录。需要注意的是在进行思维逻辑时需要保持在一个专注并轻松的状态。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#专注是因为在做思维逻辑时，会根据某一点在脑海中进行全面的链式思考，这个思考很有可能是唯一的，不可再现的，一旦被打断或者是自己神游出去了，就很难回到原来的状态。那么很有可能这次思考就作废或是丢失了一个十分重要的点。"><span class="nav-number">3.1.1.</span> <span class="nav-text">专注是因为在做思维逻辑时，会根据某一点在脑海中进行全面的链式思考，这个思考很有可能是唯一的，不可再现的，一旦被打断或者是自己神游出去了，就很难回到原来的状态。那么很有可能这次思考就作废或是丢失了一个十分重要的点。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#轻松是因为在做思维逻辑本身就是一个思维扩散的过程，很多时候不强调对错，就凭借第一感受去思考并记录。而轻松是为了让自己的思维能更加活跃、更加发散。"><span class="nav-number">3.1.2.</span> <span class="nav-text">轻松是因为在做思维逻辑本身就是一个思维扩散的过程，很多时候不强调对错，就凭借第一感受去思考并记录。而轻松是为了让自己的思维能更加活跃、更加发散。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#进行功能穷尽时主要是以产品需求情况以及用户的实用角度出发去完善华师匣子信息架构体系。"><span class="nav-number">3.2.</span> <span class="nav-text">进行功能穷尽时主要是以产品需求情况以及用户的实用角度出发去完善华师匣子信息架构体系。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#展示的信息架构体系并不是最开始搭建的信息架构，而是在多次的会议与讨论中完善起来的。毕竟即便是自己多次回顾也可能会有功能穷尽疏漏或是在技术层面实现考虑欠缺的方面。"><span class="nav-number">3.2.1.</span> <span class="nav-text">展示的信息架构体系并不是最开始搭建的信息架构，而是在多次的会议与讨论中完善起来的。毕竟即便是自己多次回顾也可能会有功能穷尽疏漏或是在技术层面实现考虑欠缺的方面。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、强调产品开发交流主要体现在："><span class="nav-number">4.</span> <span class="nav-text">三、强调产品开发交流主要体现在：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#在开会的过程中难免会遇到“觉得这个会议内容好像与我相关性不大”的情况，如在确立原型中安卓开发工程师可能觉得与自身的相关性不大。这个时候需要有意识地调动开发在会议中的参与感，往往会有意想不到的收获。"><span class="nav-number">4.1.</span> <span class="nav-text">在开会的过程中难免会遇到“觉得这个会议内容好像与我相关性不大”的情况，如在确立原型中安卓开发工程师可能觉得与自身的相关性不大。这个时候需要有意识地调动开发在会议中的参与感，往往会有意想不到的收获。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#如在原型讨论中开发就提出了（这个控件不好实现）此时设计师就可以提前进入修改…"><span class="nav-number">4.1.1.</span> <span class="nav-text">如在原型讨论中开发就提出了（这个控件不好实现）此时设计师就可以提前进入修改…</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#会议的主要内容有："><span class="nav-number">4.2.</span> <span class="nav-text">会议的主要内容有：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#每一次开会都会引导大家积极从自身领域思考提出对问题的见解，及时发现并解决隐含问题。"><span class="nav-number">4.3.</span> <span class="nav-text">每一次开会都会引导大家积极从自身领域思考提出对问题的见解，及时发现并解决隐含问题。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#如在确定消息通知需求情况时，我原本打算是实时请求数据并若获取到有消息更新后就立即通知用户，而后端开发工程师提出这样会给服务器造成较大压力，经商量最终确定按情况进行请求次数及时间的设置，如课表信息更新请求是每日早上六点进行请求"><span class="nav-number">4.3.1.</span> <span class="nav-text">如在确定消息通知需求情况时，我原本打算是实时请求数据并若获取到有消息更新后就立即通知用户，而后端开发工程师提出这样会给服务器造成较大压力，经商量最终确定按情况进行请求次数及时间的设置，如课表信息更新请求是每日早上六点进行请求</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#在开发过程中安卓开发工程师发现课表疑似少了一个删除功能的设置，并在开会中主动提出，而确实就是少设置了一个删除功能，虽然在此前已经进行了原型的可用性测试……"><span class="nav-number">4.3.2.</span> <span class="nav-text">在开发过程中安卓开发工程师发现课表疑似少了一个删除功能的设置，并在开会中主动提出，而确实就是少设置了一个删除功能，虽然在此前已经进行了原型的可用性测试……</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#小会不间断是指除了较大的需要项目组全员参与商讨并确定的事件之外，各项目组组与组之间还要进行不间断地小会，主要是为了解决细致上的问题。"><span class="nav-number">4.4.</span> <span class="nav-text">小会不间断是指除了较大的需要项目组全员参与商讨并确定的事件之外，各项目组组与组之间还要进行不间断地小会，主要是为了解决细致上的问题。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#如在进行原型设计时，产品经理会与设计师详细交流需求情况以及功能路径情况，设计师不清楚的时候也会跟产品经理沟通。同时设计师拿不准是否可以实现的交互及其难度时可以积极主动去与开发工程师确认，而在匣子的开发过程中我就十分强调设计师与开发工程师的交流。"><span class="nav-number">4.4.1.</span> <span class="nav-text">如在进行原型设计时，产品经理会与设计师详细交流需求情况以及功能路径情况，设计师不清楚的时候也会跟产品经理沟通。同时设计师拿不准是否可以实现的交互及其难度时可以积极主动去与开发工程师确认，而在匣子的开发过程中我就十分强调设计师与开发工程师的交流。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#在确定数据的API时候，后端开发工程师虽然已经拿到了数据需求情况，但是需要与安卓开发工程师进行API接口的讨论及确认……"><span class="nav-number">4.4.2.</span> <span class="nav-text">在确定数据的API时候，后端开发工程师虽然已经拿到了数据需求情况，但是需要与安卓开发工程师进行API接口的讨论及确认……</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、其它方面保证和推进开发进度："><span class="nav-number">5.</span> <span class="nav-text">四、其它方面保证和推进开发进度：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#大概了解产品经理工作内容的都知道，产品经理的工作是贯穿整个产品开发及产品迭代过程的。主要的工作有竞品分析、用户调查、数据分析、需求分析、原型设计、可用性测试以及保证和推荐产品开发进度，但往往在进行了六项工作后，容易在保证和推进产品开发进度上松懈。"><span class="nav-number">5.1.</span> <span class="nav-text">大概了解产品经理工作内容的都知道，产品经理的工作是贯穿整个产品开发及产品迭代过程的。主要的工作有竞品分析、用户调查、数据分析、需求分析、原型设计、可用性测试以及保证和推荐产品开发进度，但往往在进行了六项工作后，容易在保证和推进产品开发进度上松懈。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#华师匣子开发过程中在经过高强度的需求分析、原型设计和可用性测试确定了匣子的原型之后，我仿佛舒了一口气，那感觉就像是我终于完成了我的工作了！但是随后坚持的例行会议以及开发期限却时刻提醒我：你要把控产品开发节奏！不能松懈！不许松懈！"><span class="nav-number">5.1.1.</span> <span class="nav-text">华师匣子开发过程中在经过高强度的需求分析、原型设计和可用性测试确定了匣子的原型之后，我仿佛舒了一口气，那感觉就像是我终于完成了我的工作了！但是随后坚持的例行会议以及开发期限却时刻提醒我：你要把控产品开发节奏！不能松懈！不许松懈！</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#那么在完成了前六项工作之后，可以从哪些方面保证和推进产品开发进度呢？"><span class="nav-number">5.2.</span> <span class="nav-text">那么在完成了前六项工作之后，可以从哪些方面保证和推进产品开发进度呢？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#项目展开时会确定项目的开发期限，而随着需求及原型的确定会更加细致确定项目中各任务的开发时间。同时根据制定的时间，不定期地对任务完成情况进行确认。"><span class="nav-number">5.3.</span> <span class="nav-text">项目展开时会确定项目的开发期限，而随着需求及原型的确定会更加细致确定项目中各任务的开发时间。同时根据制定的时间，不定期地对任务完成情况进行确认。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#由于团队并未使用项目管理的软件，分配任务是借助Tower上的看板，而对任务完成的情况确认就需要我自己在私底下进行，所以我需要十分确定当前有什么事情，未来即将又要确定什么事情等。需要自身拿捏好任务情况的同时还要迅速在各任务中切换，这个时候做好记录十分重要。"><span class="nav-number">5.3.1.</span> <span class="nav-text">由于团队并未使用项目管理的软件，分配任务是借助Tower上的看板，而对任务完成的情况确认就需要我自己在私底下进行，所以我需要十分确定当前有什么事情，未来即将又要确定什么事情等。需要自身拿捏好任务情况的同时还要迅速在各任务中切换，这个时候做好记录十分重要。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在跟进项目情况时能够较快切换当前工作状态，并且做好记录及必要的修改工作。"><span class="nav-number">5.4.</span> <span class="nav-text">在跟进项目情况时能够较快切换当前工作状态，并且做好记录及必要的修改工作。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#各组开发需要的“资源”是指：如安卓开发工程师开发需要的原型图或视觉稿，如后端开发工程师开发需要的数据需求等，而当明确各组开发需要的资源才能够更好地明确各组开发时间的同时还能调动并实现并行开发，而不是串行开发。"><span class="nav-number">5.5.</span> <span class="nav-text">各组开发需要的“资源”是指：如安卓开发工程师开发需要的原型图或视觉稿，如后端开发工程师开发需要的数据需求等，而当明确各组开发需要的资源才能够更好地明确各组开发时间的同时还能调动并实现并行开发，而不是串行开发。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#匣子原型设计完成之后，开发小哥就可以开始干活了，而后台小哥，在需求确定后还没进行原型设计之前也开始干活了，如爬取产品所需要的数据、开始编写API文档等……"><span class="nav-number">5.5.1.</span> <span class="nav-text">匣子原型设计完成之后，开发小哥就可以开始干活了，而后台小哥，在需求确定后还没进行原型设计之前也开始干活了，如爬取产品所需要的数据、开始编写API文档等……</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#未后语"><span class="nav-number"></span> <span class="nav-text">未后语</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#华师匣子是我第一次作为产品经理角色打造的产品，也是木犀团队第一款系统打造的产品，可谓是一款从0到1的产品。"><span class="nav-number">0.1.</span> <span class="nav-text">华师匣子是我第一次作为产品经理角色打造的产品，也是木犀团队第一款系统打造的产品，可谓是一款从0到1的产品。</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#在华师匣子打造之前，木犀团队并没有产品经理，只有技术开发人员及设计师，由于缺乏这个角色造成了许多产品开发隐患。而当我来到木犀并担任产品经理角色组建项目组进行开发时基本是靠自己的学习和摸索。"><span class="nav-number">0.1.1.</span> <span class="nav-text">在华师匣子打造之前，木犀团队并没有产品经理，只有技术开发人员及设计师，由于缺乏这个角色造成了许多产品开发隐患。而当我来到木犀并担任产品经理角色组建项目组进行开发时基本是靠自己的学习和摸索。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#在华师匣子开发前我先是自主学习了什么是产品经理，产品经理的工作主要有什么，产品开发的流程是什么等。当确定要做华师匣子产品时，我又开始了解竞品分析的内容、原型设计的内容以及可用性测试的内容。在推进华师匣子开发进度的同时，也提升了自我能力，并输出了产品小白学习概要、4步拿下可用性测试等学习成果。"><span class="nav-number">0.1.2.</span> <span class="nav-text">在华师匣子开发前我先是自主学习了什么是产品经理，产品经理的工作主要有什么，产品开发的流程是什么等。当确定要做华师匣子产品时，我又开始了解竞品分析的内容、原型设计的内容以及可用性测试的内容。在推进华师匣子开发进度的同时，也提升了自我能力，并输出了产品小白学习概要、4步拿下可用性测试等学习成果。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#也正是从华师匣子产品开始，木犀团队根据团队情况开始搭建了自己的产品开发体系，而我在期间起到了主要的作用。"><span class="nav-number">0.2.</span> <span class="nav-text">也正是从华师匣子产品开始，木犀团队根据团队情况开始搭建了自己的产品开发体系，而我在期间起到了主要的作用。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在华师匣子的整个开发过程中我有想要懈怠过，有彷徨过，但是心中对打造出一款属于自己的产品的热情却从来没有递减，能够跟项目组成员在为着一个共同目标奋斗，一起感受打造一款产品的苦与乐是再值得不过的事情。我想在未来的开发过程中也是如此，尽管是有困难险阻，但是我来了，我足够热爱，我就不会放弃并会想办法去把它克服。：）"><span class="nav-number">0.3.</span> <span class="nav-text">在华师匣子的整个开发过程中我有想要懈怠过，有彷徨过，但是心中对打造出一款属于自己的产品的热情却从来没有递减，能够跟项目组成员在为着一个共同目标奋斗，一起感受打造一款产品的苦与乐是再值得不过的事情。我想在未来的开发过程中也是如此，尽管是有困难险阻，但是我来了，我足够热爱，我就不会放弃并会想办法去把它克服。：）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#华师匣子开发时间轴"><span class="nav-number"></span> <span class="nav-text">华师匣子开发时间轴</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2016"><span class="nav-number">1.</span> <span class="nav-text">2016</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wwwwylin</span>
 </div>
 
 
-			</div>
-		</div>
-	</section>
-	<div class="container mb2 clearfix">
-	<div class="sm-flex center nowrap mb2 h5">
-		<div class="flex-auto border-bottom">
-			<a href="https://hexo.io/" class="btn block muted">Hexo</a>
-		</div>
-		<div class="flex-auto border-bottom">
-			<a href="https://zllovesuki.git.sx/essays/2016/02/hexo-theme-weightless/" class="btn block">Weightless</a> Theme
-		</div>
-		<div class="flex-auto border-bottom">
-			Rocking <a href="http://www.basscss.com/" class="btn block">Basscss</a>
-		</div>
-		<div class="flex-auto border-bottom">
-			
-		</div>
-	</div>
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
-<script src="/js/geomicons.js"></script>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
 <script type="text/javascript">
-	var icons = document.querySelectorAll('[data-icon]');
-	geomicons.inject(icons);
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
-	<!-- Piwik -->
-	<script type="text/javascript">
-	  var _paq = _paq || [];
-	  _paq.push(['trackPageView']);
-	  _paq.push(['enableLinkTracking']);
-	  (function() {
-	    var u="//null/";
-	    _paq.push(['setTrackerUrl', u+'piwik.php']);
-	    _paq.push(['setSiteId', null]);
-	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	  })();
-	</script>
-	<noscript><p><img src="//null/piwik.php?idsite=null" style="border:0;" alt="" /></p></noscript>
-	<!-- End Piwik Code -->
 
 
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
 
 </body>
 </html>
