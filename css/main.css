@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c4987e;
+  background: #c11d8e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2424,4 +2424,11 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+body {
+  Background-image: url("http://mi0.mmmono.com/85f4dd2485281cbb9b968eb0beaf8d08.gif?imageView2/2/w/1920");
+  background-repeat: No-repeat;
+  background-attachment: fixed;
+  background-position: 90% 82%;
+  background-size: 120px 120px;
 }
