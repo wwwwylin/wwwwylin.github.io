@@ -1,0 +1,709 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="总结,体验," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="最开始的菜鸟裹裹只是查询物件信息以及查看附近快递员信息，目前已增设了上门取件，自提点寄件，校园包裹侠等功能，同时在物件运输方面遵循菜鸟网络更快更近的原则。   
+菜鸟网络是指（个人理解）：通过各物流系统依据统一规则管理物件，做到快递单电子化的同时实现强大的物件调度管理，从而构成了一个诺大的物流网络。     
+上门取件 / 自提点寄件功能背景 / 寄件场景">
+<meta property="og:type" content="article">
+<meta property="og:title" content="菜鸟裹裹使用体验">
+<meta property="og:url" content="http://yoursite.com/2017/02/24/taking_about_cainiao/index.html">
+<meta property="og:site_name" content="Mia's Blog">
+<meta property="og:description" content="最开始的菜鸟裹裹只是查询物件信息以及查看附近快递员信息，目前已增设了上门取件，自提点寄件，校园包裹侠等功能，同时在物件运输方面遵循菜鸟网络更快更近的原则。   
+菜鸟网络是指（个人理解）：通过各物流系统依据统一规则管理物件，做到快递单电子化的同时实现强大的物件调度管理，从而构成了一个诺大的物流网络。     
+上门取件 / 自提点寄件功能背景 / 寄件场景">
+<meta property="og:image" content="http://oi0ie82j6.bkt.clouddn.com/tobe.png">
+<meta property="og:image" content="http://oi0ie82j6.bkt.clouddn.com/message.png">
+<meta property="og:updated_time" content="2017-03-13T12:30:49.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="菜鸟裹裹使用体验">
+<meta name="twitter:description" content="最开始的菜鸟裹裹只是查询物件信息以及查看附近快递员信息，目前已增设了上门取件，自提点寄件，校园包裹侠等功能，同时在物件运输方面遵循菜鸟网络更快更近的原则。   
+菜鸟网络是指（个人理解）：通过各物流系统依据统一规则管理物件，做到快递单电子化的同时实现强大的物件调度管理，从而构成了一个诺大的物流网络。     
+上门取件 / 自提点寄件功能背景 / 寄件场景">
+<meta name="twitter:image" content="http://oi0ie82j6.bkt.clouddn.com/tobe.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/02/24/taking_about_cainiao/"/>
+
+  <title> 菜鸟裹裹使用体验 | Mia's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Mia's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                菜鸟裹裹使用体验
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-02-24T19:41:50+08:00" content="2017-02-24">
+              2017-02-24
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/02/24/taking_about_cainiao/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/24/taking_about_cainiao/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最开始的菜鸟裹裹只是查询物件信息以及查看附近快递员信息，目前已增设了<strong>上门取件</strong>，<strong>自提点寄件</strong>，<strong>校园包裹侠</strong>等功能，同时在物件运输方面遵循菜鸟网络<strong>更快更近</strong>的原则。   </p>
+<p><em>菜鸟网络是指（个人理解）：通过各物流系统依据统一规则管理物件，做到快递单电子化的同时实现强大的物件调度管理，从而构成了一个诺大的物流网络。</em>     </p>
+<h2 id="上门取件-自提点寄件"><a href="#上门取件-自提点寄件" class="headerlink" title="上门取件 / 自提点寄件"></a>上门取件 / 自提点寄件</h2><h3 id="功能背景-寄件场景"><a href="#功能背景-寄件场景" class="headerlink" title="功能背景 / 寄件场景"></a>功能背景 / 寄件场景</h3><a id="more"></a>
+<p>当前寄件的方式主要有：去快递站点或代理点寄件、联系<strong>熟悉的</strong>快递员上门取件、放到相关的自提点寄件。</p>
+<p><strong>一、去快递站点或代理点寄件</strong></p>
+<ul>
+<li>优点<ul>
+<li>去到填完邮单就可以离开（邮单可能是电子邮单，直接在手机上完成邮单信息填写并付费）</li>
+<li>避免物件不可寄被通知退回，可及时获取并解决</li>
+<li>对于邮单上材料填写<strong>有疑问的可及时询问</strong>工作人员并得到答复 <em>比如物件类型要填写什么</em></li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>快递站点或者代理点离得远，跑一趟花时间</li>
+</ul>
+</li>
+</ul>
+<p><strong>二、联系熟悉的快递员上门取件</strong></p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li>不需要跑一趟直接有人上门</li>
+<li>交代熟悉的快递员寄件会比较放心和舒心</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>快递员到来的时间不可估算 <em>有时候需要等待较长时间</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>三、放到相关的自提点寄件</strong></p>
+<ul>
+<li>优点<ul>
+<li>直接放到附近的自提点后便可离开</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>自提点当前覆盖的城市及区域有限，在短期内来说只是部分城市部分市民能够受益</li>
+</ul>
+</li>
+</ul>
+<h3 id="功能看法"><a href="#功能看法" class="headerlink" title="功能看法"></a>功能看法</h3><p>从上面的寄件方式及其优缺点可了解到，目前寄件存在的主要问题是：</p>
+<ul>
+<li>去快递点寄件个人时间内耗成本较高</li>
+<li>上门寄件可能<strong>联系不上</strong>快递员或快递员<strong>迟迟未到</strong></li>
+<li>自提点寄件但是周围<strong>没有设置自提点</strong></li>
+</ul>
+<p>所以可否做这样的一个假设：<strong>当上门寄件的速度足够快以及设置的自提点足够多的情况下，去快递点寄件的寄件方式就会被淘汰，而快递点和寄件人建立的关系都是【线上关系】，来往会更加便利。</strong></p>
+<p><em>那么上门寄件的速度要如何提升以及自提点的设置应该如何规划呢？</em></p>
+<p>目前菜鸟裹裹采用的是<strong>快速匹配周围快递员或者是最近的快递点的办法来解决上门寄件速度</strong>的问题，以快速匹配周围快递员为主。并且将寄件的人群主要锁定为二手货寄件、商品退货寄件及个人物件，个人物件的话其实是写字楼的量会相对大些。    </p>
+<h4 id="建议-想法"><a href="#建议-想法" class="headerlink" title="建议 / 想法"></a>建议 / 想法</h4><p>所以以上问题就转换为<strong>如何能快速匹配上快递员并保证其在短时间内能够到达</strong>，其中包括匹配最近的快递点。其实这个问题就很像打车，我是随时随地都能快捷打到车而不是去到某个站点才能够拦截到车。所以快速匹配并在短时间能够完成的问题其实很像滴滴打车中<strong>怎么样能够给打车的人快速匹配到车并在短时间内成功搭乘</strong>。从这点来看，滴滴打车虽然与菜鸟裹裹的业务内容不同但是也是值得了解和分析的竞品之一。</p>
+<h2 id="校园包裹侠"><a href="#校园包裹侠" class="headerlink" title="校园包裹侠"></a>校园包裹侠</h2><h3 id="功能背景"><a href="#功能背景" class="headerlink" title="功能背景"></a>功能背景</h3><p><strong>包裹侠</strong>是指那些接收【帮取包裹】请求并将包裹按时送达请求者手上的人，并会在这个过程中赚取一定费用。        </p>
+<p><em>至于在菜鸟裹裹中为什么是<strong>校园包裹侠</strong>不是职场包裹侠或者是包裹侠……我刚开始也不是很理解，就简单觉得可能菜鸟锁定了学生（大学生）这个群体吧。</em>    </p>
+<p>快递的主要取件方式有：到快递点或者是代理点取件、快递员上门送件、自提点取件。而会发出想要<strong>帮取包裹</strong>请求的大体可以分成两种情况：<strong>需要去快递点或者代理点取但是不想去或者没时间去</strong>和快递员上门送件恰好不在。   </p>
+<p>针对后面一种情况：一般来说，收件人都掌握着物件的配送信息，能大概估算快递员上门，从而对自己的行程进行调整或安排，或者致电快递员提前沟通，这是比较理想的状态。当然，如果刚好接到电话自己又恰好不在，可以<strong>经协商后选择他人代签或者是由快递员在第二天进行配送</strong>。所以，在快递员上门配送存在的问题只是快递员送货上门但是恰好我不在，时间方面的冲撞问题，且也是有了较好的解决方式，<strong>需要的就是引导收件人合理选择收件时间（或者是寄件人合理选择配送时间），使得配送更高效</strong>。  </p>
+<p>而如果是前一种情况：需要去快递点或者代理点取件，导致“无法”出门去取，除了会有时间方面的冲突之外，还有就是懒得去取件，或者是行动不便等导致想要他人代劳。这个时候包裹侠就被号召而来了，而其实快递代取只是跑腿请求中的一个分支。那为何快递代取主要锁定了在了校园呢？    </p>
+<p><strong>一般来说快递的派送都是会快递人员送货上门，但是对于校园以及超过配送范围地偏远地区就会需要收件人到某一快递点或者代理点进行取货</strong>，而这两大类人群中，校园的包裹数额大且校园里的收件人群性格特征明显，所以我想这也是菜鸟裹裹锁定校园包裹侠而不是职场包裹侠或单单只是包裹侠的原因，<strong>校园包裹侠让快递代取在菜鸟裹裹中的定位更加明显和清晰</strong>，且主要是锁定了大学校园。   </p>
+<p><em>校园里的收件人群性格特征：习惯使用新的方式让自己的生活更加便利，更愿意接受付费跑腿的人群性格。</em></p>
+<h3 id="功能看法-1"><a href="#功能看法-1" class="headerlink" title="功能看法"></a>功能看法</h3><p>校园包裹侠锁定了大学校园的人群并抓住部分人群<strong>无法</strong>去快递点或代理点取快递的痛点，设置了【帮我取包裹】、【帮我跑跑腿】、【跑腿抢单】等功能，提供了<strong>快递代取和零碎时间赚取外快</strong>的平台。   </p>
+<p><em>那么在帮我跑腿和我帮你跑腿之间用户最关注的是什么呢？</em></p>
+<p>无论是请求帮忙还是包裹侠都需要填写个人信息，而包裹侠需要填写的信息会更加详细，这里要考虑到：</p>
+<ul>
+<li>信息的<strong>真实性</strong>（信息验证）</li>
+<li>信息的<strong>全面性</strong>（出现包裹失踪能够找到该包裹侠，包裹迟迟未被送达能联系上包裹侠等）</li>
+<li>建立<strong>诚信评判</strong>标准（抢单的包裹侠能看到他的诚信情况，是否被投诉过等）<em>这个暂未在菜鸟裹裹中发现</em>  </li>
+</ul>
+<p>包裹侠可以通过<strong>抢单</strong>的方式进行抢截包裹，同时包裹的信息会注明是包裹的大小、预期送达的时间和地址以及付费的金额（当前全有用户填写）。</p>
+<h4 id="建议-想法-1"><a href="#建议-想法-1" class="headerlink" title="建议 / 想法"></a>建议 / 想法</h4><p>用户创建找人代取快递<strong>包裹的详细信息</strong>是根据自主编辑或是粘贴快递短信（有时需做删减）的方式进行补充的，但如果可以<strong>直接导入在菜鸟中的包裹信息</strong>，用户就省去了输入包裹详细信息这一步骤了，也不需要选择包裹的尺寸等信息（系统可以进行判断），<strong>只需要输入预期送达的时间和打算付费的金额即可</strong>。</p>
+<p><em>当前创建代取的方式，感觉如同再填了一次快递单般不简单。</em>  </p>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><h3 id="寄件地址"><a href="#寄件地址" class="headerlink" title="寄件地址"></a>寄件地址</h3><p>选择寄件地址时会有一个地址簿，上面有淘宝的常用地址，能够满足自身对常用地址的需求，使得地址能够快捷输入。</p>
+<p>而为什么采用定位锁定地址的同时，还要增加一个地址簿呢？个人感觉是菜鸟裹裹的另一用心之处，<strong>寄件不一定是寄送自己的物件，可能是代为寄送</strong>，所以就会要输入其它地址，而我们会去帮忙寄件的人绝大多数来说都是跟我们生活紧密的人，如家人、闺蜜等，我们可能会给她们购置过商品物件，故淘宝上备注的常用地址又能够满足和帮助到该需求。    </p>
+<h3 id="导入包裹"><a href="#导入包裹" class="headerlink" title="导入包裹"></a>导入包裹</h3><p>能够登录其他常用的网购平台<strong>不需查询订单就能轻松了解包裹信息</strong>，从而也清楚哪些平台上购置的商品能够做到。</p>
+<h3 id="成为包裹侠"><a href="#成为包裹侠" class="headerlink" title="成为包裹侠"></a>成为包裹侠</h3><p><strong>一、设置层级较深，难以发现</strong><br>成为包裹侠（我发现的成为包裹侠的唯一入口）的位置放在了<strong>校园包裹侠-订单</strong>之后与【帮我取包裹】同级，但是点击进入订单是先看到【我发起的订单】和【帮我取包裹】，【成为包裹侠】需要点击【抢的任务】才能看见，所以<strong>实际【成为包裹侠】的层级比【帮我取包裹】的要低</strong>。</p>
+<p>但是实际在进入校园包裹侠后就有【帮我取包裹】和【帮我跑跑腿】，而进入订单之后又有【帮我取包裹】但是【成为包裹侠】被搁置了，同时看到的是【抢的任务】的按钮，所以<strong>知道点击【抢的任务】会有【成为包裹侠】这个入口</strong>显然是比较困难的。  </p>
+<p><img src="http://oi0ie82j6.bkt.clouddn.com/tobe.png" alt=""></p>
+<p><strong>二、填写信息并进入下一步屡次失败</strong></p>
+<p>虽然填写包裹侠信息以及提示了建议在有WiFi的情况下进行填写，就告诉用户请保持网络通畅的情况下进行。我是使用WiFi的情况下进行填写的，但是<strong>每次到上传图片及上传学生证时就卡壳，点击上传之后并没有图片上传情况的信息反馈，直到最后上传完学生证后一段时间也未上传成功</strong>。</p>
+<p><em>同时，在填写学号信息的时候点击输入框，弹出的键盘会遮挡输入框（使用讯飞输入法是如此，切换了系统自带输入法也是，手机型号：MX5）。</em></p>
+<p><img src="http://oi0ie82j6.bkt.clouddn.com/message.png" alt=""> </p>
+<h2 id="期望"><a href="#期望" class="headerlink" title="期望"></a>期望</h2><p>随着时代的发展、人们消费主要模式的转换以及快递物流的发达，菜鸟裹裹在我看来是一个充满着生命力的产品。     </p>
+<p>而<strong>校园包裹侠</strong>又再一次带来了空闲时间也能赚钱的渠道。同时<strong>快速匹配快递员</strong>和<strong>自提点寄件的方式</strong>能够让寄件人更加方便地寄送物件，在一定程度上解决了寄送痛点。虽然现在仍有一定的不足，如附件没有快递员或快递员不愿意接单、自提点的覆盖面积仍然较小等，但是恰恰是被需要了，才会被提出并且希望得到改善吧。    </p>
+<p>期待菜鸟裹裹越来越好~❤️ </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/总结/" rel="tag">#总结</a>
+          
+            <a href="/tags/体验/" rel="tag">#体验</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/22/summary_on_ccnubox_development/" rel="next" title="华师匣子项目总结">
+                <i class="fa fa-chevron-left"></i> 华师匣子项目总结
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/02/24/taking_about_cainiao/"
+           data-title="菜鸟裹裹使用体验" data-url="http://yoursite.com/2017/02/24/taking_about_cainiao/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Mia 林文雅" />
+          <p class="site-author-name" itemprop="name">Mia 林文雅</p>
+          <p class="site-description motion-element" itemprop="description">写有意思的文 / 做有意思的产品 / ٩(ˊvˋ*)و</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/u/4dbcfc357e3b" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/2880955673/profile?rightmod" target="_blank" title="weibo">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/wwwwylin" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  github
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#上门取件-自提点寄件"><span class="nav-number">1.</span> <span class="nav-text">上门取件 / 自提点寄件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#功能背景-寄件场景"><span class="nav-number">1.1.</span> <span class="nav-text">功能背景 / 寄件场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能看法"><span class="nav-number">1.2.</span> <span class="nav-text">功能看法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#建议-想法"><span class="nav-number">1.2.1.</span> <span class="nav-text">建议 / 想法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#校园包裹侠"><span class="nav-number">2.</span> <span class="nav-text">校园包裹侠</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#功能背景"><span class="nav-number">2.1.</span> <span class="nav-text">功能背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能看法-1"><span class="nav-number">2.2.</span> <span class="nav-text">功能看法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#建议-想法-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">建议 / 想法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它"><span class="nav-number">3.</span> <span class="nav-text">其它</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#寄件地址"><span class="nav-number">3.1.</span> <span class="nav-text">寄件地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导入包裹"><span class="nav-number">3.2.</span> <span class="nav-text">导入包裹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成为包裹侠"><span class="nav-number">3.3.</span> <span class="nav-text">成为包裹侠</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#期望"><span class="nav-number">4.</span> <span class="nav-text">期望</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mia 林文雅</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"wwwwylin"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
