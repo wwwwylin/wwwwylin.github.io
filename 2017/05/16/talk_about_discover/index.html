@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="体验,认真生活," />
+  <meta name="keywords" content="认真生活,体验," />
 
 
 
@@ -317,7 +317,8 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/05/16/talk_about_discover/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/16/talk_about_discover/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/05/16/talk_about_discover/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -402,9 +403,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/体验/" rel="tag"># 体验</a>
-          
             <a href="/tags/认真生活/" rel="tag"># 认真生活</a>
+          
+            <a href="/tags/体验/" rel="tag"># 体验</a>
           
         </div>
       
@@ -455,8 +456,11 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/05/16/talk_about_discover/"
-           data-title="为什么停不下刷朋友圈" data-url="http://yoursite.com/2017/05/16/talk_about_discover/">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
       </div>
     
   </div>
@@ -707,27 +711,28 @@
 
   
 
+
   
+
     
+      <script id="dsq-count-scr" src="https://wwwwylin.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/05/16/talk_about_discover/';
+          this.page.identifier = '2017/05/16/talk_about_discover/';
+          this.page.title = '为什么停不下刷朋友圈';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://wwwwylin.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
   
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"wwwwylin"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-
-
-
 
 
 
